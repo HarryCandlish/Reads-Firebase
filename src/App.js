@@ -2,10 +2,12 @@ import React from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 
+import Nav from "./components/Nav";
+
 function App() {
   return (
     <Router>
-      <h1>Book Diary</h1>
+      <Nav />
     </Router>
   );
 }
