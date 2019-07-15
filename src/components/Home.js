@@ -10,12 +10,28 @@ class Home extends Component {
           <img className={homeStyles.image} alt="godot" src="godot.jpg" />
         </div>
         <div>
-          <img className={homeStyles.bookImage} alt="book" src="book.png" />
-          <img
-            className={homeStyles.pencilImage}
-            alt="pencil"
-            src="pencil.png"
-          />
+          <ul className={homeStyles.container}>
+            <li className={homeStyles.flexbox}>
+              <img
+                className={homeStyles.imageProfile}
+                alt="profile"
+                src="profile.png"
+              />
+            </li>
+            <li className={homeStyles.flexbox}>
+              <img className={homeStyles.imageBook} alt="book" src="book.png" />
+            </li>
+            <li className={homeStyles.flexbox}>
+              <img className={homeStyles.imagePen} alt="pen" src="pencil.png" />
+            </li>
+            <li className={homeStyles.flexbox}>
+              <img
+                className={homeStyles.imageGrowth}
+                alt="growth"
+                src="growth.png"
+              />
+            </li>
+          </ul>
         </div>
       </div>
     );

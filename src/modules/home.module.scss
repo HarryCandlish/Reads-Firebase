@@ -4,10 +4,40 @@
   opacity: 0.8;
 }
 
-.bookImage {
-  width: 75px;
+.imageProfile {
+  width: 80px;
+  margin: 10%;
 }
 
-.pencilImage {
-  width: 50px;
+.imageBook {
+  width: 80px;
+  margin: 10%;
+}
+
+.imagePen {
+  width: 80px;
+  margin: 20px;
+}
+
+.imageGrowth {
+  width: 80px;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center space-between;
+  width: 20%;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
 }
