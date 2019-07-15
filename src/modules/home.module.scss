@@ -7,21 +7,25 @@
 .imageProfile {
   width: 80px;
   margin: 10%;
+  padding-top: 10%;
 }
 
 .imageBook {
   width: 80px;
   margin: 10%;
+  padding-top: 10%;
 }
 
 .imagePen {
   width: 80px;
-  margin: 20px;
+  margin: 10%;
+  padding-top: 10%;
 }
 
 .imageGrowth {
   width: 80px;
-  margin: 20px;
+  margin: 10%;
+  padding-top: 10%;
 }
 
 .container {
@@ -40,4 +44,15 @@
   align-items: center;
   text-align: center;
   margin: 5px;
+  border: 1px solid black;
+}
+
+.content {
+  letter-spacing: 2px;
+}
+
+.paragraph {
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  padding-top: 5%;
 }
