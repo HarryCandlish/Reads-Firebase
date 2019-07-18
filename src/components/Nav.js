@@ -8,7 +8,7 @@ class Nav extends Component {
       <div>
         <nav>
           <div>
-            <h4 className={navStyles.title}>Sauce.</h4>
+            <h4 className={navStyles.title}>Hairy Reads.</h4>
           </div>
           <ul className={navStyles.navLinks}>
             <a href="#/store">
