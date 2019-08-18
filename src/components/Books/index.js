@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Books extends Component {
   state = {
-    todos: [
+    books: [
       {
         id: 1,
         title: "Tropic of Cancer",
@@ -58,27 +58,15 @@ class Books extends Component {
     ]
   };
 
-  markComplete = id => {
-    this.setState({
-      todos: this.state.todos.map(todo => {
-        if (todo.id === id) {
-          todo.completed = !todo.completed;
-        }
-        return todo;
-      })
-    });
-  };
-
-  delTodo = id => {
-    this.setState({
-      todos: [...this.state.todos.filter(todo => todo.id !== id)]
-    });
-  };
-
   render() {
     return (
       <div>
         <h1>Books</h1>
+        <ul>
+          {this.state.books.map(book => {
+            return <li>{book.title}</li>;
+          })}
+        </ul>
       </div>
     );
   }
