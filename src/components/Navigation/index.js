@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import navbarStyles from "../../modules/navigation.module.scss";
+
 import SignOutButton from "../SignOut";
 import * as ROUTES from "../../constants/routes";
 
@@ -16,34 +18,42 @@ const Navigation = ({ authUser }) => (
 );
 
 const NavigationAuth = () => (
-  <ul>
-    <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.HOME}>Home</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.ACCOUNT}>Account</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.ADMIN}>Admin</Link>
-    </li>
-    <li>
-      <SignOutButton />
-    </li>
-  </ul>
+  <nav>
+    {" "}
+    <div className={navbarStyles.titleContainer}>
+      <h1 className={navbarStyles.title}>i-Read.</h1>
+    </div>
+    <ul className={navbarStyles.list}>
+      <li className={navbarStyles.links}>
+        <Link to={ROUTES.HOME}>Home</Link>
+      </li>
+      <li className={navbarStyles.links}>
+        <Link to={ROUTES.ACCOUNT}>Account</Link>
+      </li>
+      <li className={navbarStyles.links}>
+        <Link to={ROUTES.ADMIN}>Admin</Link>
+      </li>
+      <li className={navbarStyles.links}>
+        <SignOutButton />
+      </li>
+    </ul>
+  </nav>
 );
 
 const NavigationNonAuth = () => (
-  <ul>
-    <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.SIGN_IN}>Sign In</Link>
-    </li>
-  </ul>
+  <nav>
+    <div className={navbarStyles.titleContainer}>
+      <h1 className={navbarStyles.title}>i-READ.</h1>
+    </div>
+    <ul className={navbarStyles.list}>
+      <li className={navbarStyles.links}>
+        <button className={navbarStyles.navButtonOne}>
+          <Link to={ROUTES.SIGN_IN}>SIGN IN</Link>
+        </button>
+      </li>
+      <li />
+    </ul>
+  </nav>
 );
 
 export default Navigation;
