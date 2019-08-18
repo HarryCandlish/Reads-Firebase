@@ -18,7 +18,7 @@ const Navigation = ({ authUser }) => (
 );
 
 const NavigationAuth = () => (
-  <nav>
+  <nav className={navbarStyles.navOne}>
     {" "}
     <div className={navbarStyles.titleContainer}>
       <h1 className={navbarStyles.title}>i-Read.</h1>
@@ -41,11 +41,11 @@ const NavigationAuth = () => (
 );
 
 const NavigationNonAuth = () => (
-  <nav>
+  <nav className={navbarStyles.navTwo}>
     <div className={navbarStyles.titleContainer}>
       <h1 className={navbarStyles.title}>i-READ.</h1>
     </div>
-    <ul className={navbarStyles.list}>
+    <ul className={navbarStyles.listTwo}>
       <li className={navbarStyles.links}>
         <button className={navbarStyles.navButtonOne}>
           <Link to={ROUTES.SIGN_IN}>SIGN IN</Link>

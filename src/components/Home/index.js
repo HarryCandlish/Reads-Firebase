@@ -2,10 +2,56 @@ import React from "react";
 
 import { withAuthorization } from "../Session";
 
+import homeStyles from "../../modules/home.module.scss";
+
+import tropic from "../../images/tropic.jpg";
+import graph from "../../images/graph.jpg";
+import reviews from "../../images/reviews.jpg";
+
 const HomePage = () => (
   <div>
-    <h1>Home Page</h1>
-    <p>The Home Page is accessible by every signed in user.</p>
+    <div className={homeStyles.gridContainer}>
+      <div className={homeStyles.overlay}>
+        <h1 className={homeStyles.gridTitle}>Books.</h1>
+        <p className={homeStyles.gridParagraph}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div>
+        <img className={homeStyles.image} src={tropic} alt="tropic" />
+      </div>
+    </div>
+    <div className={homeStyles.gridContainerTwo}>
+      <div>
+        <img className={homeStyles.imageTwo} src={graph} alt="graph" />
+      </div>
+      <div className={homeStyles.overlayTwo}>
+        <h1 className={homeStyles.gridTitleTwo}>Progress.</h1>
+        <p className={homeStyles.gridParagraphTwo}>
+          Lorem ipsum dolore sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+    <div className={homeStyles.gridContainerThree}>
+      <div className={homeStyles.overlayThree}>
+        <h1 className={homeStyles.gridTitleThree}>Friends.</h1>
+        <p className={homeStyles.gridParagraphThree}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div>
+        <img className={homeStyles.imageThree} src={reviews} alt="reviews" />
+      </div>
+    </div>
   </div>
 );
 
