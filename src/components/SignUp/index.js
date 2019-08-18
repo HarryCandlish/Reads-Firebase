@@ -5,9 +5,11 @@ import { compose } from "recompose";
 import { withFirebase } from "../Firebase";
 import * as ROUTES from "../../constants/routes";
 
+import signupStyles from "../../modules/signup.module.scss";
+
 const SignUpPage = () => (
-  <div>
-    <h1>SignUp</h1>
+  <div className={signupStyles.signupContainer}>
+    <h1>Sign Up</h1>
     <SignUpForm />
   </div>
 );
@@ -95,7 +97,11 @@ class SignUpFormBase extends Component {
           type="password"
           placeholder="Confirm Password"
         />
-        <button disabled={isInvalid} type="submit">
+        <button
+          className={signupStyles.signupButton}
+          disabled={isInvalid}
+          type="submit"
+        >
           Sign Up
         </button>
 

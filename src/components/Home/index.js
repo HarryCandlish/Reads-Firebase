@@ -1,5 +1,8 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+import * as ROUTES from "../../constants/routes";
+
 import { withAuthorization } from "../Session";
 
 import homeStyles from "../../modules/home.module.scss";
@@ -19,6 +22,9 @@ const HomePage = () => (
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
+        <button className={homeStyles.bookButton}>
+          <Link to={ROUTES.BOOKS}>Add and Update Books</Link>
+        </button>
       </div>
       <div>
         <img className={homeStyles.image} src={tropic} alt="tropic" />
@@ -36,6 +42,9 @@ const HomePage = () => (
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
+        <button className={homeStyles.progressButton}>
+          <Link to={ROUTES.PROGRESS}>Check Progress</Link>
+        </button>
       </div>
     </div>
     <div className={homeStyles.gridContainerThree}>
@@ -47,6 +56,9 @@ const HomePage = () => (
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
+        <button className={homeStyles.friendsButton}>
+          <Link to={ROUTES.FRIENDS}>Share With Friends</Link>
+        </button>
       </div>
       <div>
         <img className={homeStyles.imageThree} src={reviews} alt="reviews" />

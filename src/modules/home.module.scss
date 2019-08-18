@@ -30,8 +30,8 @@
   // top: 450px;
   // left: 120px;
   top: 190px;
-  border: 2px solid black;
-  background: white;
+  border: none;
+  background: #c2dde6;
   border-radius: 50px;
   color: black;
   font-size: 16px;
@@ -101,8 +101,8 @@ a {
   // top: 450px;
   // left: 120px;
   top: 190px;
-  border: 2px solid black;
-  background: white;
+  border: none;
+  background: #c2dde6;
   border-radius: 50px;
   color: black;
   font-size: 16px;
@@ -183,8 +183,8 @@ a {
   // top: 450px;
   // left: 120px;
   top: 190px;
-  border: 2px solid black;
-  background: white;
+  border: none;
+  background: #c2dde6;
   border-radius: 50px;
   color: black;
   font-size: 16px;
@@ -197,4 +197,48 @@ a {
   color: black;
   font-size: 15px;
   // font-style: italic;
+}
+
+.friendsButton {
+  position: relative;
+  width: 150px;
+  height: 60px;
+  top: 175px;
+
+  border: none;
+  background: #c2dde6;
+  border-radius: 25px;
+  color: black;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.progressButton {
+  position: relative;
+  width: 150px;
+  height: 60px;
+  top: 175px;
+  padding: 5px;
+  border: none;
+  background: #c2dde6;
+  border-radius: 25px;
+  color: black;
+  font-size: 16px;
+}
+
+.bookButton {
+  position: relative;
+  width: 150px;
+  height: 60px;
+  top: 175px;
+  padding: 5px;
+  border: none;
+  background: #c2dde6;
+  border-radius: 25px;
+  color: black;
+  font-size: 16px;
+}
+
+button {
+  background-color: #fbaf08;
 }

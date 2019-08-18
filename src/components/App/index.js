@@ -9,6 +9,9 @@ import PasswordForgetPage from "../PasswordForget";
 import HomePage from "../Home";
 import AccountPage from "../Account";
 import AdminPage from "../Admin";
+import Progress from "../Progress";
+import Books from "../Books";
+import Friends from "../Friends";
 
 import * as ROUTES from "../../constants/routes";
 import { withAuthentication } from "../Session";
@@ -25,6 +28,9 @@ const App = () => (
       <Route path={ROUTES.HOME} component={HomePage} />
       <Route path={ROUTES.ACCOUNT} component={AccountPage} />
       <Route path={ROUTES.ADMIN} component={AdminPage} />
+      <Route path={ROUTES.PROGRESS} component={Progress} />
+      <Route path={ROUTES.BOOKS} component={Books} />
+      <Route path={ROUTES.FRIENDS} component={Friends} />
     </div>
   </Router>
 );
