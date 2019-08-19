@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Book from "./Book";
+import Books from "./Books";
 import PropTypes from "prop-types";
 
 import bookStyles from "../../modules/books.module.scss";
@@ -10,7 +10,7 @@ class AllBooks extends Component {
       <ul className={bookStyles.booksGrid}>
         {this.props.books.map(book => (
           <li className={bookStyles.list} key={book.id}>
-            <Book book={book} markRead={this.props.markRead} />
+            <Books book={book} markRead={this.props.markRead} />
           </li>
         ))}
       </ul>
