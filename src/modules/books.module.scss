@@ -1,0 +1,40 @@
+.title {
+  text-align: center;
+  font-size: 35px;
+}
+
+.booksTitle {
+  font-size: 20px;
+  text-align: center;
+  // width: 200px;
+}
+
+.booksGrid {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 8%;
+  margin: 0;
+  position: relative;
+}
+
+.booksFlexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center space-between;
+  border-radius: 1%;
+  max-height: 250px;
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+.list {
+  width: 25%;
+  list-style: none;
+  width: 33%;
+}

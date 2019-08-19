@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 
+import AllBooks from "./AllBooks";
+
+import bookStyles from "../../modules/books.module.scss";
+
 class Books extends Component {
   state = {
     books: [
@@ -19,7 +23,7 @@ class Books extends Component {
         language: "English",
         followed_by: "Black Spring",
         publisher: "Obelisk Press",
-        image: "/"
+        image: "./tropic.jpg"
       },
       {
         id: 1,
@@ -53,20 +57,32 @@ class Books extends Component {
         language: "Japanese",
         followed_by: "",
         publisher: "New Directions",
-        image: "/"
+        image: "/",
+        read: false,
+        reading: true,
+        want_to_read: false
       }
     ]
+  };
+
+  markRead = id => {
+    this.setState({
+      books: this.state.books.map(book => {
+        if (book.id === id) {
+          book.read = !book.read;
+        }
+        return book;
+      })
+    });
   };
 
   render() {
     return (
       <div>
-        <h1>Books</h1>
-        <ul>
-          {this.state.books.map(book => {
-            return <li>{book.title}</li>;
-          })}
-        </ul>
+        <h1 className={bookStyles.title}>Books</h1>
+        <div>
+          <AllBooks books={this.state.books} markRead={this.markRead} />
+        </div>
       </div>
     );
   }
