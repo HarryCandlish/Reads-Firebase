@@ -8,3 +8,4 @@ export const PROGRESS = "/progress";
 export const BOOKS = "/books";
 export const FRIENDS = "/friends";
 export const PASSWORD_FORGET = "/pw-forget";
+export const BOOK = "/book";
