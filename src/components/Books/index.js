@@ -23,7 +23,7 @@ class Books extends Component {
         language: "English",
         followed_by: "Black Spring",
         publisher: "Obelisk Press",
-        image: "./tropic.jpg"
+        image: "../images/miller.jpg"
       },
       {
         id: 1,
